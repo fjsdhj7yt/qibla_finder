@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aesthetic Qibla Finder</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="qibla.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Qibla Finder</h1>
+      <div class="compass-container">
+        <div id="compass">
+          <div id="arrow"></div>
+          <div id="qibla"></div>
+          <div class="compass-face">
+            <span class="direction" style="top: 10px; left: 50%">N</span>
+            <span class="direction" style="top: 50%; right: 10px">E</span>
+            <span class="direction" style="bottom: 10px; left: 50%">S</span>
+            <span class="direction" style="top: 50%; left: 10px">W</span>
+          </div>
+        </div>
+        <div class="kaaba-overlay">
+          <img src="images/kaaba.jpg" alt="Kaaba" class="kaaba-image" />
+        </div>
+      </div>
+      <div id="info">
+        <p>Qibla Direction: <span id="qibla-angle">Calculating...</span></p>
+        <p>Your Location: <span id="user-location">Detecting...</span></p>
+      </div>
+    </div>
+    <script src="qibla.js"></script>
+  </body>
+</html>
